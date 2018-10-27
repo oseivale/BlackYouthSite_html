@@ -1,0 +1,143 @@
+/*
+COLORS:
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to left bottom, rgba(133, 196, 240, 0.8), rgba(40, 180, 133, 0.8) ), url('../images/ato-aikins-283964-unsplash.jpg');
+  background-size: cover;
+  position: relative;
+  background-position: 0px;
+  clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%);
+
+  animation-name: fadeIn;
+  animation-duration: 2s;
+
+
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo{
+  height: 35px;
+}
+
+.text-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+  text-align: left;
+}
+
+.heading-primary{
+  color: #fff;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+  margin-bottom: 60px;
+}
+
+.heading-primary-main{
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 15px;
+
+  animation-name: fadeIn;
+  animation-duration: 2s;
+
+
+}
+
+.heading-primary-sub{
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+  font-family: 'Fredericka the Great', cursive;
+
+  animation-name: moveInRight;
+  animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+    0%{
+      opacity: 0;
+    }
+
+}
+
+@keyframes moveInRight {
+    0%{
+      opacity: 0;
+      transform: translate(200px);
+    }
+
+}
+
+
+.nav-bar{
+  text-align: right;
+  padding: 20px;
+
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.container{
+ 
+  grid-template-columns: 1fr 1fr; 
+  display: grid;
+
+}
+
+.our-story{
+  padding: 60px;
+  font-size: 1.2em;
+  
+
+}
+
+.title{
+  padding: 20px;
+  text-align: right;
+}
+
+img{
+  transform: translate(200px);
+}
+
+.our-story-section, .title{
+   transform: translate(-200px);
+
+}
+
+
