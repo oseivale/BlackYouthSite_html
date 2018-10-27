@@ -34,14 +34,9 @@ body {
 
 }
 
-.logo-box {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-}
-
 .logo{
-  height: 35px;
+  color: white;
+  padding-top: 20px;
 }
 
 .text-box{
@@ -112,32 +107,57 @@ body {
   color: white;
 }
 
-.container{
- 
-  grid-template-columns: 1fr 1fr; 
-  display: grid;
+.nav-link:hover{
+  text-decoration: underline;
+}
+
+.our-story, .support-us{
+
+  height: 40vh;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 50px;
 
 }
 
-.our-story{
-  padding: 60px;
-  font-size: 1.2em;
-  
 
+.section{
+
+  margin-left: 17.7%;
+  width: 50vw;
 }
 
 .title{
-  padding: 20px;
-  text-align: right;
+  margin-left: 15%;
+  font-size: 2em;
+  padding: 35px;
 }
 
-img{
-  transform: translate(200px);
+.footer{
+  height: 40vh;
+  background-color: #D7E4F2;
 }
 
-.our-story-section, .title{
-   transform: translate(-200px);
-
+i{
+  padding-left: 300px;
+  padding-top: 15px
 }
 
+.contact-icons{
+  padding-top: 50px;
+ margin-left: -200px;
+}
+
+.footer-contact{
+  padding-top: 40px;
+  padding-left: 75px;
+}
+
+.support-us{
+  height: 50vh;
+  background-color: #ECEEF0;
+  position: relative;
+  margin-bottom: 0px;
+  clip-path: polygon(0 0, 100% 20%, 100% 75vh, 0 100%);
+}
 
