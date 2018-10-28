@@ -26,11 +26,18 @@ body {
   background-size: cover;
   position: relative;
   background-position: 0px;
+  backface-visibility: hidden;
   clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%);
 
   animation-name: fadeIn;
   animation-duration: 2s;
 
+  animation-name: photoSlider;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+
+  /*transition: background-image 5s ease-in-out;*/
 
 }
 
@@ -97,13 +104,14 @@ body {
 .nav-bar{
   text-align: right;
   padding: 20px;
+  background-color: rgba(151, 154, 158 , 0.6);
 
 }
 
 .nav-link {
   text-decoration: none;
   padding: 20px;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
 }
 
@@ -161,3 +169,28 @@ i{
   clip-path: polygon(0 0, 100% 20%, 100% 75vh, 0 100%);
 }
 
+/*incorporate a slider for the header photos*/
+
+@keyframes photoSlider {
+
+     0%{
+   
+      background-image: linear-gradient(to left bottom, rgba(133, 196, 240, 0.8), rgba(40, 180, 133, 0.8) ), url('../images/adult-artist-black-background-1529350.jpg');
+    }
+   
+     30%{
+      
+      background-image: linear-gradient(to left bottom, rgba(133, 196, 240, 0.8), rgba(40, 180, 133, 0.8) ), url('../images/arms-care-check-905874.jpg');
+    }
+     70%{
+      
+      background-image: linear-gradient(to left bottom, rgba(133, 196, 240, 0.8), rgba(40, 180, 133, 0.8) ), url('../images/adult-afro-blur-1181519.jpg');
+    }
+     100%{
+      
+      background-image: linear-gradient(to left bottom, rgba(133, 196, 240, 0.8), rgba(40, 180, 133, 0.8) ), url('../images/ato-aikins-283964-unsplash.jpg');
+    }
+
+}
+
+/*have a spot for sponsors on the footer section*/
