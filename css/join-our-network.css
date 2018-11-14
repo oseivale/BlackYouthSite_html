@@ -1,0 +1,31 @@
+
+.contact-box{
+	width: 40vw;
+	margin-left: 400px;
+	color: #fff;
+	font-size: 1.2em;
+	
+}
+
+
+.get-involved{
+	margin-left: 400px;
+	margin-top: 300px;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+body{
+	height: 67.5vh;
+	background-image: linear-gradient(to left bottom, rgba(204, 195, 181, 0.8), rgba(40, 180, 133, 0.8)), url('../images/adult-afro-blur-1181519.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+.submit-btn{
+	width: 345px;
+	height: 35px;
+	border-radius: 8px;
+	background-color: #fff;
+}
