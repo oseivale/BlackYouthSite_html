@@ -1,9 +1,4 @@
-/*
-COLORS:
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-*/
+/*Default styling*/
 
 * {
   margin: 0;
@@ -19,9 +14,9 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 30px;
-
-
 }
+
+/*Main header begins*/
 
 .header {
   height: 95vh;
@@ -73,8 +68,6 @@ body {
 
   animation-name: fadeIn;
   animation-duration: 2s;
-
-
 }
 
 .heading-primary-sub{
@@ -103,6 +96,7 @@ body {
 
 }
 
+/*Navigation bar begins*/
 
 .nav-bar{
   text-align: right;
@@ -122,6 +116,32 @@ body {
   text-decoration: underline;
 }
 
+.donate-link{
+  
+  background-color: #fff;
+  color: grey;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+}
+
+.donate-link:hover{
+  box-shadow: 2px 4px rgba(63, 65, 65, 0.3); 
+}
+
+.donate-link:active{
+  box-shadow: none;
+}
+
+/*Post-header section begins*/
+
+#post-header{
+  height: 370px;
+  padding-left: 400px;
+  padding-top: 100px;
+  font-size: 2.2em;
+}
+
 .our-story, .support-us{
 
   height: 40vh;
@@ -130,6 +150,7 @@ body {
 
 }
 
+/*Section structure and grid layout for middle section*/
 
 .section{
 
@@ -138,7 +159,6 @@ body {
   font-size: 0.5em;
   transform: translate(-300px, -100px);
  
-
 }
 
 
@@ -156,29 +176,6 @@ body {
  
 }
 
-.footer{
-  height: 40vh;
-  background-color: #D7E4F2;
-}
-
-
-
-.contact-icons{
-  padding-top: 50px;
- margin-left: -200px;
-}
-
-.footer-contact{
-  padding-top: 40px;
-  padding-left: 75px;
-}
-
-.support-us{
-  height: 50vh;
-  width: 50vw;
-  position: relative;
-  margin-bottom: 0px;
-}
 
 /*incorporate a slider for the header photos*/
 /*
@@ -205,13 +202,7 @@ body {
 }
 */
 
-.main-container{
-  /*display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 80vw;*/
-
-
-}
+/*Middle section begins*/
 
 .black-artist {
   height: 300px;
@@ -275,16 +266,6 @@ body {
   width: 100px;
 }
 
-#pre-footer{
-  height: 700px;
-}
-
-#post-header{
-  height: 370px;
-  padding-left: 400px;
-  padding-top: 100px;
-  font-size: 2.2em;
-}
 
 #grid-container{
   display: grid;
@@ -320,5 +301,87 @@ body {
 a{
   text-decoration: none;
 }
+
+/*Pre-footer section begins*/
+
+#pre-footer{
+  height: 500px;
+  background-color: #E4EBEF;
+  margin-top: 20px;
+}
+
+/*Email submission in the prefooter section*/
+
+.email-field{
+  padding: 200px 300px;
+
+}
+
+.input-field{
+  height: 40px;
+  width: 300px;
+}
+
+.send-btn{
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: #61ACDA;
+  border-radius: 8px;
+  font-size: 1.2em;
+  border: none;
+  margin-left: 10px;
+}
+
+.send-btn:hover{
+  background-color: #8DBBD9;
+}
+
+
+.get-involved{
+  transform: translateY(170px);
+  padding-left: 270px;
+}
+
+input[placeholder]{
+  text-align: center;
+  font-size: 1.2em;
+
+}
+
+.copyright{
+  text-align: center;
+}
+
+/*Footer section begins*/
+
+.footer{
+  height: 40vh;
+  margin-top: 2px;
+  width: 80vw;
+  padding-left: 300px;
+}
+
+
+.footer-contact{
+  padding-top: 40px;
+  text-align: left;
+}
+
+i{
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  background-color: #61ACDA;
+  border-radius: 20px;
+}
+
+i:hover{
+  background-color: #8DBBD9;
+}
+
+
+
 
 /*have a spot for sponsors on the footer section*/
