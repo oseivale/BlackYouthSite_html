@@ -12,6 +12,7 @@ var paragraph2 = document.getElementById('our-story2');
 var paragraph3 = document.getElementById('our-story3');
 var blackGrad = document.querySelector('.black-grad');
 var blackReader = document.querySelector('.black-reader');
+var navBar = document.querySelector('.nav-bar');
 
 
 blackArtist.addEventListener('click', function(e){
@@ -44,3 +45,4 @@ blackReader.addEventListener('click', function(e){
 
 
 });
+
