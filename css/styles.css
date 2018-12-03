@@ -114,23 +114,27 @@ body {
   padding: 20px;
   font-size: 25px;
   color: white;
+  margin-left: 15px;
 }
 
 .nav-link:hover{
-  text-decoration: underline;
-}
+  color: #D2E3EE;
+ }
+
 
 .donate-link{
   
   background-color: #fff;
   color: grey;
   border-radius: 30px;
-  padding: 15px 30px;
-  font-size: 1.2em;
+  padding: 15px 40px;
+    font-size: 25px;
+
+  margin-right: 20px;
 }
 
 .donate-link:hover{
-  box-shadow: 2px 4px rgba(63, 65, 65, 0.3); 
+  box-shadow: 2px 4px rgba(63, 65, 65, 0.2); 
 }
 
 .donate-link:active{
@@ -358,6 +362,46 @@ input[placeholder]{
   text-align: center;
 }
 
+#make-difference{
+  height: 300px;
+  width: 500px;
+  border-radius: 40px;
+  box-shadow: 2px 4px rgba(182, 186, 189, 0.5);
+  background-color: rgba(244, 247, 250, 0.8);
+  transform: translate(900px, -400px);
+  color: rgba(54, 148, 213, 0.8);
+}
+
+#make-difference i{
+   transform: translate(220px, 30px);
+    color: rgba(54, 148, 213, 0.5);
+}
+
+#make-difference p{
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 0.9em;
+
+}
+
+#top{
+  font-size: 2em;
+  text-align: center;
+  padding-top: 40px;
+
+ 
+}
+
+#bottom{
+  font-size: 1.5em;
+  text-align: center;
+  
+}
+
+
+
+
 /*Footer section begins*/
 
 .footer{
@@ -373,7 +417,7 @@ input[placeholder]{
   text-align: left;
 }
 
-i{
+.icon i{
   display: inline;
   padding: 10px;
   margin: 10px;
@@ -382,7 +426,7 @@ i{
   border-radius: 20px;
 }
 
-i:hover{
+.icon i:hover{
   background-color: #8DBBD9;
 }
 
@@ -390,3 +434,206 @@ i:hover{
 
 
 /*have a spot for sponsors on the footer section*/
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1755px){
+  .header{
+    width: 1550px;
+  }
+
+  .nav-bar{
+    width: 1755px;
+  }
+
+  .nav-bar{
+    text-align: center;
+    padding-left: 300px;
+
+  }
+
+  .black-artist, .black-reader, .black-grad{
+    width:350px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1555px){
+  h1{
+    font-size: 1.2em;
+  }
+
+  h4{
+    font-size: 0.5em;
+  }
+
+   .header{
+    width: 1520px;
+  }
+
+  .nav-bar{
+    width: 1635px;
+  }
+
+  .nav-bar{
+    text-align: center;
+    padding-left: 200px;
+
+  }
+
+.nav-link {
+  font-size: 23.5px;
+}
+
+  .black-artist, .black-reader, .black-grad{
+    width:350px;
+  }
+
+
+.heading-primary-main{
+  display: block;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 15px;
+  
+
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+.heading-primary-sub{
+  display: block;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+  font-family: 'Fredericka the Great', cursive;
+  
+  /*animation-name: moveInRight;
+  animation-duration: 3s;*/
+}
+
+
+}
+
+@media screen and (max-width: 1355px){
+  h1{
+    font-size: 0.92em;
+  }
+
+  h4{
+    font-size: 0.5em;
+  }
+
+  .nav-bar, .header{
+    width: 1255px;
+  }
+
+  .nav-bar{
+    text-align: center;
+
+  }
+
+  .nav-link {
+  font-size: 22px;
+}
+
+
+  .believe, .title-2{
+    width: 350px;
+  }
+
+  .heading-primary-main{
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 15px;
+  text-align: left;
+  /*padding-left: 130px;*/
+
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+.heading-primary-sub{
+  display: block;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+  font-family: 'Fredericka the Great', cursive;
+  /*text-align: right;*/
+  /*animation-name: moveInRight;
+  animation-duration: 3s;*/
+}
+
+
+}
+
+@media screen and (max-width: 1020px){
+  h1{
+    font-size: 0.9em;
+    width: 800px;
+  }
+
+  h4{
+    font-size: 0.5em;
+  }
+
+  .nav-bar, .header{
+    width: 1020px;
+  }
+
+  .nav-bar{
+    text-align: center;
+
+  }
+
+  #grid-container{
+  display: grid;
+  grid-template-columns: 1fr;
+
+  }
+
+  .believe, .title-2{
+    width: 710px;
+    padding-left: 100px;
+
+  }
+
+    .black-artist, .black-reader, .black-grad{
+    width:550px;
+    transform: translateX(-160px);
+  }
+
+.heading-primary-main{
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 15px;
+  text-align: left;
+  padding-left: 200px;
+
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+.heading-primary-sub{
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+  font-family: 'Fredericka the Great', cursive;
+  padding-left: 200px;
+  /*animation-name: moveInRight;
+  animation-duration: 3s;*/
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+}
+
