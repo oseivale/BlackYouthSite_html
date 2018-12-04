@@ -414,7 +414,7 @@ input[placeholder]{
 
 .footer-contact{
   padding-top: 40px;
-  text-align: left;
+  text-align: center;
 }
 
 .icon i{
@@ -430,7 +430,37 @@ input[placeholder]{
   background-color: #8DBBD9;
 }
 
+.contact-icons{
+  transform: translateY(100px);
+  padding-left: 450px;
+}
 
+.footer-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 160px;
+
+}
+
+.f1{
+  display: block;
+}
+
+.f1 a {
+  color: #61ACDA;
+}
+
+.f1 a:hover{
+  text-decoration: underline;
+}
+
+.f2 p, .f3 p{
+  color: #61ACDA;
+}
+
+h4{
+  text-transform: uppercase;
+}
 
 
 /*have a spot for sponsors on the footer section*/
